@@ -12,6 +12,15 @@
 #define SYM   2
 #define FN    3
 
+&left_encoder {
+    status = "disabled";
+};
+
+&right_encoder {
+    status = "disabled";
+};
+
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -30,46 +39,5 @@
 			>;
 		};
 
-		nav_layer {
-			bindings = <
-// +----------+----------+----------+----------+----------+----------+                                                 +----------+----------+----------+----------+----------+----------+
-// |          |          |          |          |          |          |                                                 |          |          |          |          |          |          |
-   &trans     &trans     &trans     &kp LG(HASH) &kp LG(LC(DOLLAR))  &kp LG(PRCNT)                                     &trans     &trans     &trans     &trans     &kp C_VOL_UP  &trans
-   &trans     &kp LGUI   &kp LALT   &kp LCTRL  &kp LG(DOLLAR)  &trans                                                  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp C_VOL_DN  &trans
-   &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &C_BRI_UP  &C_PREV    &C_PP      &kp C_NEXT &kp C_MUTE    &trans
-// +----------+----------+----------+----------+----------+----------+----------+----------+     +----------+----------+----------+----------+----------+----------+----------+----------+
-                                    &trans     &trans     &trans     &trans     &trans           &trans     &trans     &C_BRI_DN  &trans     &trans
-//                                  |          |          |          |          |          |     |          |          |          |          |          |
-//                                  +----------+----------+----------+----------+----------+     +----------+----------+----------+----------+----------+
-			>;
-		};
-
-		sym_layer {
-			bindings = <
-// +----------+----------+----------+----------+----------+----------+                                                 +----------+----------+----------+----------+----------+----------+
-// |          |          |          |          |          |          |                                                 |          |          |          |          |          |          |
-   &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                                                       &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp EQUAL
-   &kp TILDE  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR &kp PRCNT                                                    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &kp PLUS
-   &kp PIPE   &kp BSHL   &kp COLON  &kp SEMI   &kp MINUS  &kp LBKT   &trans     &trans           &trans     &trans     &kp RBKT   &kp UNDER  &kp COMMA  &kp LBRC   &kp RBRC   &kp QMARK
-// +----------+----------+----------+----------+----------+----------+----------+----------+     +----------+----------+----------+----------+----------+----------+----------+----------+
-                                    &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans
-//                                  |          |          |          |          |          |     |          |          |          |          |          |
-//                                  +----------+----------+----------+----------+----------+     +----------+----------+----------+----------+----------+
-			>;
-		};
-
-		fn_layer {
-			bindings = <
-// +----------+----------+----------+----------+----------+----------+                                                 +----------+----------+----------+----------+----------+----------+
-// |          |          |          |          |          |          |                                                 |          |          |          |          |          |          |
-   &trans     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                                                       &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &none
-   &trans     &none      &none      &none      &none      &none                                                        &none      &none      &none      &kp F11    &kp F12    &none
-   &trans     &none      &none      &none      &none      &none      &none      &none            &none      &none      &none      &none      &none      &none      &none      &none
-// +----------+----------+----------+----------+----------+----------+----------+----------+     +----------+----------+----------+----------+----------+----------+----------+----------+
-                                    &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans
-//                                  |          |          |          |          |          |     |          |          |          |          |          |
-//                                  +----------+----------+----------+----------+----------+     +----------+----------+----------+----------+----------+
-			>;
-		};
 	};
 };
