@@ -39,19 +39,18 @@
 			>;
 		};
 
-		sym_layer {
+		fn_layer {
 			bindings = <
 // +----------+----------+----------+----------+----------+----------+                                                 +----------+----------+----------+----------+----------+----------+
 // |          |          |          |          |          |          |                                                 |          |          |          |          |          |          |
-   &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                                                       &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp EQUAL
-   &kp TILDE  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR &kp PRCNT                                                    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR   &kp PLUS
-   &kp PIPE   &kp BSHL   &kp COLON  &kp SEMI   &kp MINUS  &kp LBKT   &trans     &trans           &trans     &trans     &kp RBKT   &kp UNDER  &kp COMMA  &kp LBRC   &kp RBRC   &kp QMARK
+   &trans     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                                                       &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &none
+   &trans     &none      &none      &none      &none      &none                                                        &none      &none      &none      &kp F11    &kp F12    &none
+   &trans     &none      &none      &none      &none      &none      &none      &none            &none      &none      &none      &none      &none      &none      &none      &none
 // +----------+----------+----------+----------+----------+----------+----------+----------+     +----------+----------+----------+----------+----------+----------+----------+----------+
                                     &trans     &trans     &trans     &trans     &trans           &trans     &trans     &trans     &trans     &trans
 //                                  |          |          |          |          |          |     |          |          |          |          |          |
 //                                  +----------+----------+----------+----------+----------+     +----------+----------+----------+----------+----------+
 			>;
 		};
-
 	};
 };
