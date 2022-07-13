@@ -33,7 +33,7 @@
 &mt LCTRL ESC &kp A      &kp S      &kp D      &kp F      &kp G                                                        &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
    &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp LSHFT  &kp LSHFT        &mo FN     &kp LSHFT  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
 // +----------+----------+----------+----------+----------+----------+----------+----------+     +----------+----------+----------+----------+----------+----------+----------+----------+
-                                    &kp LALT   &kp LGUI   &lt SYM SPC &kp BSPC  &kp RET          &mo NAV    &lt SYM SPC &kp RET   &kp RGUI   &kp RALT
+                                    &kp LALT   &kp LGUI   &mt LC(LS(LALT)) SPC &kp BSPC  &kp RET          &mo NAV    &lt SYM SPC &kp RET   &kp RGUI   &kp RALT
 //                                  |          |          |          |          |          |     |          |          |          |          |          |
 //                                  +----------+----------+----------+----------+----------+     +----------+----------+----------+----------+----------+
 			>;
